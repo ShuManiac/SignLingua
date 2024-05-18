@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database-compat.js"></script>
+    <script defer src="/js/translate.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Translation Live!</title>
+</head>
+<body>
+    <a href="/html/index.html" class="back-arrow" data-tooltip="Back To The Home Page">&#8592;</a>
+    <section id="translation">
+        <div class="translation container">
+            <div class="translation-top">
+                <h1 class="section-title"><span>Translation Live</span></h1>
+            </div>
+            <div id="videoContainer" class="translation-middle">
+                <img id="videoPlayer" crossorigin="anonymous" onerror="this.onerror=null; this.src='/img/noSignal.jpg'"></img>
+            </div>
+            <div class="translation-bottom">
+                <textarea id="textInput" rows="5" cols="30" readonly></textarea>
+                <div>
+                    <button class="cta" id="start">Start</button>
+                    <button class="cta" id="stop">Stop</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

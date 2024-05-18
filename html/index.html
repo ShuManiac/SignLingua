@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "KKwpuWpEeFYrBvktF",
+            });
+        })();
+    </script>
+    <script defer src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>SignLingua</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#"><h1><span>S</span>ign <span>L</span>ingua</h1></a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger"><div class="bar"></div></div>
+                    <ul>
+                       <li><a href="#main" data-after="Home">Home</a></li> 
+                       <li><a href="#services" data-after="Services">Services</a></li> 
+                       <li><a href="#asl" data-after="ASL">ASL</a></li> 
+                       <li><a href="#about" data-after="About">About</a></li> 
+                       <li><a href="#contact" data-after="Contact">Contact</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Of Header -->
+
+    <!-- Main Section -->
+    <section id="main">
+        <div class="main container">
+            <div>
+                <h1>Welcome <span></span></h1>
+                <h1>To SignLingua <span></span></h1>
+                <h1>Communication Beyond Words <span></span></h1>
+                <button id="goPage" class="cta" onclick="goToPage()">Try It</button>
+            </div>
+        </div>
+    </section>
+    <!-- End Of Main Section -->
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="services container">
+            <div class="service-top">
+                <h1 class="section-title">Serv<span>i</span>ces</h1>
+                <p>Unlocking Communication: Empowering Accessibility with SignLingua's Innovative Services. Welcome to SignLingua's comprehensive suite of services designed to revolutionize communication for individuals who are deaf or hard of hearing. Through cutting-edge technology and a commitment to inclusivity, we offer a range of solutions tailored to meet diverse needs and enhance accessibility in various settings. Explore our offerings below to discover how SignLingua is breaking down barriers and fostering meaningful connections through real-time sign language translation, customized solutions, and seamless accessibility integration.</p>
+            </div>
+            <div class="service-bottom">
+                <div class="service-item hidden">
+                    <div class="icon"><img src="/img/imageVideo.png"></div>
+                    <h2>Real-Time Sign Language Translation</h2>
+                    <p>Experience the future of communication with SignLingua's cutting-edge real-time sign language translation service. Our advanced technology harnesses the power of machine learning to analyze live video feeds from ESP32-CAM devices, accurately translating sign language gestures into spoken or written language in real-time. Whether in a classroom, medical facility, or public event, our service ensures seamless communication for individuals who are deaf or hard of hearing, breaking down barriers and promoting inclusivity.</p>
+                </div>
+                <div class="service-item hidden">
+                    <div class="icon"><img src="/img/imagePuzzle.png"></div>
+                    <h2>Customized Translation Solutions</h2>
+                    <p>At SignLingua, we understand that one size does not fit all when it comes to translation solutions. That's why we offer customized services tailored to your specific needs and industry requirements. From educational institutions to healthcare providers and beyond, our team works closely with clients to develop bespoke translation solutions that enhance accessibility and communication. Whether you require integration with existing systems or a standalone solution, SignLingua delivers personalized translations that meet your unique needs and exceed expectations.</p>
+                </div>
+                <div class="service-item hidden">
+                    <div class="icon"><img src="/img/imageAccessability.png"></div>
+                    <h2>Accessibility Integration Services</h2>
+                    <p>Promoting accessibility and inclusivity is at the core of what we do at SignLingua. Our accessibility integration services seamlessly incorporate sign language translation capabilities into existing applications, websites, and assistive devices, ensuring that everyone can communicate effectively regardless of their hearing abilities. Whether you're a developer looking to integrate sign language translation into your app or a business seeking to enhance accessibility on your website, our team provides comprehensive integration solutions that bridge the gap and promote equal access for all.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Of Services Section -->
+
+    <!-- American Sign Language -->
+    <section id="asl">
+        <div class="asl container">
+            <div class="asl-header">
+                <h1 class="section-title">American <span>Sign Language</span></h1>
+            </div>
+            <div class="asl-table">
+                <table class="abc-table table">
+                    <tbody>
+                    <tr>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                        <td>D</td>
+                        <td>E</td>
+                        <td>F</td>
+                        <td>G</td>
+                        <td>H</td>
+                        <td>I</td>
+                        <td>J</td>
+                        <td>K</td>
+                        <td>L</td>
+                        <td>M</td>
+                    </tr>
+                    <tr>
+                        <td>N</td>
+                        <td>O</td>
+                        <td>P</td>
+                        <td>Q</td>
+                        <td>R</td>
+                        <td>S</td>
+                        <td>T</td>
+                        <td>U</td>
+                        <td>V</td>
+                        <td>W</td>
+                        <td>X</td>
+                        <td>Y</td>
+                        <td>Z</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <section class="text-section">
+                    <h1 class="section-title">Press a letter to <span>see its translation</span></h1>
+                </section>
+                <div class="translation-div">
+                    <table class="translation-table table hidden">
+                        <thead>
+                            <tr>
+                                <th>Letter</th>
+                                <th>Sign Language</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Translation rows will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Of American Sign Language -->
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img src="/img/me.jpg" alt="img">
+                </div>
+            </div>
+            <div class="col-right">
+                <h1 class="section-title">About <span>Me</span></h1>
+                <h2>Student 14th grade Kinneret College</h2>
+                <p>Hello there! I'm a passionate 20-year-old individual immersed in the world of technology, with a particular focus on bridging communication barriers through innovation. Currently, I'm channeling my enthusiasm into a groundbreaking sign language translation project, harnessing the power of Python for machine learning algorithms to facilitate seamless communication. In addition to Python, I'm proficient in crafting captivating web experiences using HTML, CSS, and JavaScript. Leveraging my skills in web development, I'm integrating real-time streaming video capabilities utilizing ESP32-CAM, thereby revolutionizing accessibility for the deaf and hard of hearing community. With a commitment to inclusivity and a thirst for technological advancement, I'm dedicated to making a meaningful impact through my work in sign language translation and beyond.</p>
+                <button  class="cta" id="businessInquiries">Business Inquiries</button>
+            </div>
+        </div>
+    </section>
+    <!-- End Of About Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact container">
+            <div>
+                <h1 class="section-title">Contact <span>Info</span></h1>
+            </div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon"><img src="/img/imagePhone.png"></div>
+                    <div class="contact-info">
+                        <h1>Phone</h1>
+                        <h2>+972-54-5543080,</h2>
+                        <h2>+972-52-2446974</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="/img/imageEmail.png"></div>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2>signlingua@biz.co.il,</h2>
+                        <h2>signlinguabiz@gmail.com</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="/img/imageAddress.png"></div>
+                    <div class="contact-info">
+                        <h1>Address</h1>
+                        <h2>Kibutz Afikim,</h2>
+                        <h2>Kiryat Ganim</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Of Contact Section -->
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1><span>S</span>ign <span>L</span>ingua</h1>
+            </div>
+            <h2>Signs Uniting Worlds: Empowering Communication.</h2>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="https://www.facebook.com/neumann.alon"><img src="/img/imageFacebook.png"></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.instagram.com/alon_neumann/"><img src="/img/imageInstagram.png"></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.youtube.com/channel/UCQrrRD62Hqj64sqPxCGQ5Iw"><img src="/img/imageYoutube.png"></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://theuselessweb.com/"><img src="/img/imageLinkedin.png"></a>
+                </div>
+            </div>
+            <p>© 2024 SignLingua. All Rights Reserved. Unauthorized use, reproduction, or distribution of this material is prohibited. SignLingua and the SignLingua logo are trademarks of SignLingua Inc.</p>
+        </div>
+    </section>
+    <!-- End Of Footer -->
+
+    <!-- Business Inquiries Modal -->
+<div id="businessInquiriesModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="businessInquiriesForm">
+            <h1>Send <span>Email</span> To Sign<span>Lingua</span></h1>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email">
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Your subject">
+
+            <label for="content">Content</label>
+            <textarea id="content" name="content" placeholder="Write something.." style="height:150px"></textarea>
+
+            <button type="button" id="sendEmail" class="cta" onclick="SendMail()">Send Email</button>
+        </form>
+    </div>
+</div>
+
+<!-- Email Confirmation Modal -->
+<div id="emailConfirmationModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeConfirmationModal()">&times;</span>
+        <h2>Email Sent Successfully!</h2>
+        <p>Your message has been sent. We will contact you shortly.</p>
+    </div>
+</div>
+
+
+</body>
+</html>
